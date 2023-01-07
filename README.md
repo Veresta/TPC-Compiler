@@ -1,5 +1,6 @@
 # TPC-Compiler
 
+Compiler for a sub-language of C, the TPC
 
 ## Guideline
 
@@ -17,6 +18,12 @@ or
 ```shell
 ./bin/tpcc < your_source.tpc [OPTIONS] [--]
 ```
+## OPTIONS
+
+- -h/--help : to print how to use the options in the stdout
+- -t/--tree : to print the tree in the stdout
+- -s/--symtabs : to print all the symbol-tables
+- -n/--noexec : to avoid generating the executable
 
 ## Contributors
 - Ramaroson "Sacane" Johan
