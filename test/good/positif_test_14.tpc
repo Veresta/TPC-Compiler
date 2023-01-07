@@ -1,0 +1,113 @@
+int a, b, c;
+char z;
+
+int add(int t1, int t2){
+    return t1 + t2;
+}
+
+void test(void){
+    if (1) {
+        putint(0);
+        
+    } else {
+        putchar('A');
+    }
+}
+
+int test2(void){
+    int res;
+    int k;
+    k = 0;
+    res = add(k, 2);
+    
+    if(res){
+        return 0;
+    }
+    return 1;
+}
+
+int bar(int argc)
+{
+
+    int local;
+    local = getint();
+    c = 1000;
+    a = 0 + 2;
+    b = 0;
+    putint(local);
+    if(b==0 || a==0 || a == 2){
+        
+        putchar('s');
+        putchar('t');
+        putchar('\n');
+        putchar('I');
+        putchar('F');
+        putchar('\n');
+        if(b){
+            putchar('B');
+            putchar('\n');
+            if(2){
+                return 1;
+            }
+            else {
+                putchar('n');
+                return 1;
+            }
+        } else {
+            putchar('N');
+            return 0;
+        }
+        putchar('C');
+        putchar('\n');
+        
+    } else {
+        putint(c);
+        return 1;
+    }
+    //No return here
+}
+
+
+int main(void){
+    int i;
+    char d;
+
+    putchar('P');
+    putchar('R');
+    putchar('O');
+    putchar('M');
+    putchar('P');
+    putchar('T');
+    putchar(' ');
+    putchar('C');
+    putchar('H');
+    putchar('A');
+    putchar('R');
+    putchar(' ');
+    putchar(':');
+    putchar(' ');
+    d = getchar();
+    putchar('P');
+    putchar('R');
+    putchar('O');
+    putchar('M');
+    putchar('P');
+    putchar('T');
+    putchar(' ');
+    putchar('I');
+    putchar('N');
+    putchar('T');
+    putchar(' ');
+    putchar(':');
+    putchar(' ');
+    
+    i = getint();
+
+    putchar(d);
+    putint(i);
+    if((i==2 && d=='z')){
+        putint(10);
+    }
+    putint(20);
+    return 0;
+}

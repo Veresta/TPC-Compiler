@@ -1,0 +1,20 @@
+int gob1, gob2;
+
+int main(void){
+    int a;
+    gob1 = 3;
+    a = getint();
+    putint(gob1);
+    putchar('P');
+    putchar('\n');
+    putint('n');
+    a = 3;
+    putint(a);
+    return 1;
+}
+
+/*int bar(void){
+    putchar('b');
+    putchar('\n');
+    return 1;
+}*/

@@ -1,0 +1,7 @@
+
+
+int main(void)
+{
+    struct temps t;
+    return 0;
+}

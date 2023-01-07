@@ -1,0 +1,17 @@
+/*#include <stdio.h>
+#include "math.h"*/
+
+int r2, r1;
+int max;
+char salut;
+
+int valeur(int a, int b, int c, int x) {
+    
+    a = b;
+
+    
+    while((a||b)&&a)
+        b=2;
+    return a+b;
+}
+

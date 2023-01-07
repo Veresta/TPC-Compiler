@@ -1,0 +1,32 @@
+
+int b;
+
+void foo(int b){
+    int b;
+    b = 10;
+}
+
+int doSmth(char p){
+    return 1;
+}
+
+int ret(void){
+    int t;
+    int sub;
+    
+    sub = t-1;
+    t = 0;
+    sub = doSmth(t);
+    sub = getint(1);
+    t = 10 + sub;
+
+    return t;
+}
+
+int main(void)
+{
+
+    a = 10;
+    return 0;
+}
+

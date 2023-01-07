@@ -1,0 +1,20 @@
+/*#include <stdio.h>
+#include <stdlib.h>*/
+
+/* Fonction pour calculer le ppcm de deux nombres */
+
+int ppcm(int a, int b){
+    int c, d;
+	c=;
+	d=b;
+    while (a!=b){   
+        if(a>b)
+          b=d+b;
+        else if(a<b)
+            a=c+a;
+    }
+    return a;
+}
+
+
+

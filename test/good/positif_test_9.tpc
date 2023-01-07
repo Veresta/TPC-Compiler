@@ -1,0 +1,28 @@
+int daioj;
+
+
+int main(void){
+    char d;
+    int a;
+    a = 10;
+    d = 'c';
+    switch(d){
+
+        putchar('m');
+        putint(a);
+        default:
+            putchar('p');
+            break;
+        case 10:
+            putchar('a');
+            putchar('b');
+            
+        case 20:
+            putchar('P');
+            
+    }
+
+    putchar('\n');
+    return 0;
+}
+

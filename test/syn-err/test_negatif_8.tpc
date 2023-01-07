@@ -1,0 +1,20 @@
+
+int a;
+char b;
+int global;
+
+int machin(void){
+    n = 'v';
+    string = "hello"; 
+}
+
+int main(void) {
+
+    int b;
+    a = 1; un = 'a';
+    t = machin(t, a, un);
+
+    print(a); print(un);
+
+    return 0;
+}

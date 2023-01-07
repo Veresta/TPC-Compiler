@@ -1,0 +1,29 @@
+
+void function_1(int c){
+  return ;
+}
+
+int fun(void){
+  return 1;
+}
+
+int main(int argc){
+	int a, b, c;
+	a = 9;
+	b=16;
+	c=5;
+  function_1(b);
+	while(a!=b){   
+    if(a>b && b > c)
+      b=b+1;
+    if(a<6)
+      a=a+a;
+    if(a){
+      a = a;
+    }
+    c=c-1;
+  }
+
+
+    return 0;
+}

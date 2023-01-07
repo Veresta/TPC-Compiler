@@ -1,0 +1,65 @@
+// #include <stdio.h>
+// #include <math.h> 
+/* int trinome(float a, float b, float c) ;
+double valeur(double a, double b, double c, double x) ; */
+/* Résolution d'une équation du deuxième degré */
+
+
+int r1, r2;
+int max;
+
+
+
+
+int main(void) {
+   
+   
+   int b, c ;
+   r1 = 0;
+   b=1;
+   max = 2;
+   if(ret1()){
+       putint(10);
+   }
+   while (b<=1) {
+       c=1;
+       while (c<=1) {
+           putchar('c');
+           if (trinome(max,b,c)) {
+            putint(10);
+               if (0<=r1 && r1<=max && 0>=r2 && r2>=max){
+                   return 0;
+               }
+                   
+           }
+           c=c+1;
+       }
+       b=b+1;
+   }
+
+   return 0;
+}
+
+int ret1(void){
+    return 1;
+}
+
+int trinome(int a,int b, int c) {
+    int d;
+    int s;
+    d=b*b-4*a*c;
+    s = 1;
+    if (d>=0) {
+
+        r1=(b+s)/(2*a);
+        r2=(b-s)/(2*a);
+        return 1;
+    }
+
+    return 0;
+}
+
+
+int valeur(int a, int b, int c, int x) {
+    return a*x*x+b*x+c;
+}

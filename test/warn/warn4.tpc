@@ -1,0 +1,11 @@
+void alpha(int a){
+    int b;
+    b = a + 2;
+    return b;
+}
+
+
+int main(void){
+    alpha(4);
+    return 0;
+}

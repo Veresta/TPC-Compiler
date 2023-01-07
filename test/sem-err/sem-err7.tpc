@@ -1,0 +1,38 @@
+int a, b;
+
+char called(int c){
+    b = 10;
+    a = 8;
+    a = a + 7 - b;
+    return c;
+}
+
+
+int main(void){
+    
+    char p;
+    int t1, t2;
+    t1 = 'a';
+    t1 = 0;
+    t2 = 3;
+    p = 9;
+    if(t1 != t2){
+        p = called(p);
+    }
+    else{
+        p = 'c';
+    }
+    t1 = called(10, 10);
+    return 0;
+}
+
+
+int caller(int flag){
+    int c;
+    if(flag == 2){
+        c = 2;
+    }
+    else{
+        c = 3;
+    }
+}

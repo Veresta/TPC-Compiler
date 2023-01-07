@@ -1,0 +1,11 @@
+int main(void)
+{
+    int t;
+    return 0;
+}
+
+void foo(int n){
+    int n;
+    n = 2;
+    c = 9;
+}

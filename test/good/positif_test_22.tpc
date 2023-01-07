@@ -1,0 +1,57 @@
+int choose(int a){
+
+    char c;
+    putint(a);
+    switch(a){
+        c = 'M';
+        putchar(c);
+        case 10:
+            c = 'T';
+            putchar(c);
+        case 20:
+            c = 'P';
+            if(c == 'P'){
+                while(a < 100){
+                    a = a+20;
+                    putint(a);
+                }
+            }
+            break;
+        case 90:
+            putchar('W');
+            putchar('\n');
+            break;
+        default:
+            c = 'N';
+            break;
+    }
+    putchar(c);
+    putchar('\n');
+    return 0;
+}
+
+void character(char c){
+    switch(c){
+        case 'M':
+            putchar('c');
+            putchar('\n');
+            break;
+        case 'P':   
+            putchar('P');
+            putchar('\n');
+            break;
+        case ' ':
+            break;
+    }
+    putchar('E');
+    putchar('\n');
+
+}
+
+int main(void)
+{
+    int a;
+    a = 10;
+    choose(a);
+    return 0;
+}

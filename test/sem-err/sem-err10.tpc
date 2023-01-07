@@ -1,0 +1,9 @@
+char amhdfaiojdhzesuhd1928jdopizaj;
+
+
+int main(int argc){
+    char c;
+    amhdfaiojdhzesuhd1928jdopizaj = 100; //Should send a warning
+    invisibleFun(c);
+    return 1;
+}

@@ -1,0 +1,20 @@
+void print(int a){
+    putint(a);
+}
+
+int main(int argc){
+    int a;
+    a = 0;
+    
+    switch(a){
+    case 100 : 
+            break;
+    case 3 : print(a);
+            break;
+    case 102 : print(3); 
+            break;
+    default: print(5);
+            break;
+    }  
+    return 0;
+}

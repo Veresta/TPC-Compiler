@@ -1,0 +1,36 @@
+int returnComplete(void)
+{
+    int a;
+    a = getint();
+
+    if(a == 2){
+        return 3;
+    }
+    else {
+        a = 5;
+        return 1;
+    }
+}
+
+int ten(void){
+    return 10;
+}
+
+int negativeTen(void){
+    putint(-ten()); 
+    return -ten();
+}
+int addTen(int var){
+    return var + 10;
+}
+
+void retVoid(void){
+    return;
+}
+
+int main(void){
+    int a;
+    a = addTen(addTen(10));
+    putint(a);
+    return 0;
+}

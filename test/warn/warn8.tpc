@@ -1,0 +1,12 @@
+int main(void){
+
+    int a, b, c;
+
+    c = 10;
+    putint(a);
+    putint(c);
+    a = 15;
+    putint(a);
+
+    return 0;
+}

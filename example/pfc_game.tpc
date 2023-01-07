@@ -1,0 +1,253 @@
+//#include <stdio.h>
+//#include <stdlib.h>
+int nb_game;
+char newLine;
+
+void putNewLine(void){
+    newLine = '\n';
+    putchar(newLine);
+}
+
+void rules(void){
+    putchar('L');
+    putchar('e');
+    putchar('a');
+    putchar('f');
+    putchar(':');
+    putchar('(');
+    putchar('f');
+    putchar(')');
+    putNewLine();
+    putchar('R');
+    putchar('o');
+    putchar('c');
+    putchar('k');
+    putchar(':');
+    putchar('(');
+    putchar('p');
+    putchar(')');
+    putNewLine();
+    putchar('S');
+    putchar('c');
+    putchar('i');
+    putchar('s');
+    putchar('s');
+    putchar('o');
+    putchar('r');
+    putchar('s');
+    putchar(':');
+    putchar('(');
+    putchar('c');
+    putchar(')');
+    putchar(' ');
+    putNewLine();
+}
+
+void askSeed(void){
+        putchar('S');
+        putchar('E');
+        putchar('L');
+        putchar('E');
+        putchar('L');
+        putchar('E');
+        putchar('C');
+        putchar('T');
+        putchar(' ');
+        putchar('A');
+        putchar(' ');
+        putchar('S');
+        putchar('E');
+        putchar('E');
+        putchar('D');
+        putchar(' ');
+        putchar(':');
+        putchar(' ');
+}
+
+void sayCongrat(void){
+        putchar('F');
+        putchar('E');
+        putchar('L');
+        putchar('I');
+        putchar('C');
+        putchar('I');
+        putchar('T');
+        putchar('A');
+        putchar('T');
+        putchar('I');
+        putchar('O');
+        putchar('N');
+        putchar('S');
+        putNewLine();
+}
+
+void for_round(void){
+    putchar(' ');
+    putchar('T');
+    putchar('H');
+    putchar('I');
+    putchar('S');
+    putchar(' ');
+    putchar('R');
+    putchar('O');
+    putchar('U');
+    putchar('N');
+    putchar('D');
+    putchar(' ');
+    putchar('!');
+    putNewLine();
+}
+
+void sayYouWin(void){
+
+    putchar('Y');
+    putchar('O');
+    putchar('U');
+    putchar(' ');
+    putchar('W');
+    putchar('I');
+    putchar('N');
+
+}
+
+void sayYouLost(void){
+    putchar('Y');
+    putchar('O');
+    putchar('U');
+    putchar(' ');
+    putchar('L');
+    putchar('O');
+    putchar('S');
+    putchar('T');
+    
+}
+
+void sayEqual(void){
+    putchar('E');
+    putchar('Q');
+    putchar('U');
+    putchar('A');
+    putchar('L');
+}
+
+
+int iaRandomShot(int seed){
+    return (seed * 160 + (seed *5 + 4) * 1000) % 3;
+}
+
+
+int main(void)
+{
+    int seed, maxRound, curRound;
+    int generatedNumber;
+    int scoreIA, scorePlayer;
+    char c, iaShot;
+
+    maxRound = 5;
+    curRound = 0;
+    scoreIA = 0;
+    scorePlayer = 0;
+    askSeed();
+    seed = getint();
+
+    while(curRound < maxRound){
+        rules();
+        generatedNumber = iaRandomShot(seed);
+        switch(generatedNumber){
+            putint(1020);
+            putint(1020);
+            case 0:
+                iaShot = 'P';
+                break;
+            case 1:
+                iaShot = 'F';
+                break;
+            case 2:
+                iaShot = 'C';
+                break;
+        }
+        c = getchar();
+        c = getchar();
+        switch (c) {
+            case 'p':
+            case 'P':
+                switch(iaShot){
+                    default:
+                        sayEqual();
+                        for_round();
+                        break;
+                    case 'F':
+                        sayYouLost();
+                        scoreIA = scoreIA + 1;
+                        for_round();
+                        break;
+                    case 'C':
+                        sayYouWin();
+                        scorePlayer = scorePlayer + 1;
+                        for_round();
+                        break;
+                    
+                }
+                break;
+            case 'f':
+            case 'F':
+                switch(iaShot){
+                    default:
+                        sayEqual();
+                        for_round();
+                        break;
+                    case 'P':
+                        sayYouWin();
+                        for_round();
+                        scorePlayer = scorePlayer + 1;
+                        break;
+                    case 'C':
+                        sayYouLost();
+                        for_round();
+                        scoreIA = scoreIA + 1;
+                        break;
+                }
+                break;
+            case 'c':
+            case 'C':
+                switch(iaShot){
+                    default:
+                        sayEqual();
+                        for_round();
+                        break;
+                    case 'P':
+                        sayYouLost();
+                        for_round();
+                        scoreIA = scoreIA + 1;
+                        break;
+                    case 'F':
+                        sayYouWin();
+                        for_round();
+                        scorePlayer = scorePlayer + 1;
+                        break;
+                }
+                break;
+            default:
+                sayYouLost();
+                scoreIA = scoreIA + 1;
+                break;
+        }
+        curRound = curRound + 1;
+        seed = seed + 1;
+    }   
+    if(scorePlayer == scoreIA){
+        sayEqual();
+        putNewLine();
+        return 1;
+    }
+    if(scorePlayer > scoreIA){
+        sayCongrat();
+        putNewLine();
+    } else {
+        sayYouLost();
+        putNewLine();
+
+    }
+
+    return 0;
+}

@@ -1,0 +1,75 @@
+int a;
+void getC(void){
+    char c;
+    c = '1';
+    putchar(c);
+    putint(c);
+}
+
+int ten(void){
+    return 10;
+}
+
+void getN(void){
+    int n;
+    n = ten();
+    putint(n);
+    putchar(n);
+    putchar('\n');
+}
+
+int useParam(char a){
+    putchar(a);
+    return 1;
+}
+int useint(int a){
+    return 1;
+}
+
+void testWhile(void){
+    int i, j;
+    char c;
+    i = 0;
+    j = 10;
+    while(i < j){
+        putint(i);
+        c = getchar();
+        switch(j){
+            case 1:
+                break;
+            case 2:
+                putchar(c);
+                return;
+            default:
+                
+                break;
+        }
+        i = i+1;
+    }
+}
+
+void tmp(void){
+    int b;
+    char c;
+    b = getint();
+    c = 'o';
+    useint(c);
+    useint('c');
+    useParam(b);
+}
+
+
+
+int main(void)
+{
+    int c;
+    int i;
+    i = 1;
+    
+    c = 1 + i;    
+    testWhile();
+    putint(-1);
+    c = getint();
+    putint(c);
+    return 0;
+}

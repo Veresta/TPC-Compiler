@@ -1,0 +1,19 @@
+int main(void){
+	int a, b, c;
+	a = 9;
+	b=16;
+	c=5;
+	while (a!=b){   
+        if(a>b)
+          b=b+1;
+        ifa<b)
+            a=a+a;
+
+        reade(a);
+        reade(b);
+        c=c-1;
+  }
+
+
+    retur 0;
+}

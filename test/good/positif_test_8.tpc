@@ -1,0 +1,16 @@
+int main(void){
+
+    int a;
+    a = 1;
+    switch(a){
+        case 0:
+            a = 3;
+            return 1;
+        case 12:
+        case 10:
+            break;
+            
+    }
+    
+    return 0;
+}

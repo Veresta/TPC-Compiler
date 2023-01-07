@@ -1,0 +1,25 @@
+
+void print(int a){
+        a = 2;
+}
+
+int main(int argc){
+    int a;
+    switch(a){
+    putchar('c');
+    case 'p' : 
+        print('p', 10);
+        break;
+    case 'a' : 
+        break;
+        print(9);
+        break;
+        break;
+    case 5 : print(3); 
+            break;
+            break;
+            break;
+    default: print(5);
+            break;
+    }  
+}

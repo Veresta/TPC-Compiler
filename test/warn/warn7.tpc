@@ -1,0 +1,12 @@
+int arroz(void){
+    int r;
+    r = 1;
+    while (r) {
+        return r;
+    }
+}
+
+int main(void){
+    arroz();
+    return 1;
+}

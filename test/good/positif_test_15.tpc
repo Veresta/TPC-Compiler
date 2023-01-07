@@ -1,0 +1,39 @@
+int a;
+int c;
+
+int foo(int bar){
+    a = 2 + 0;
+
+
+    return a;
+}
+
+void foo2(int bar){
+    return;
+}
+
+int main(void)
+{
+    
+    c = 1;
+    a = 102;
+    if(1 || 2){
+        putchar('I');
+        putchar('F');
+        putchar('\n');
+    } else {
+        putchar('E');
+        putchar('L');
+        putchar('S');
+        putchar('E');
+        putchar('\n');
+    }
+    putchar('E');
+    putchar('N');
+    putchar('D');
+    putchar('\n');
+    putint(a);
+    putint(1029);
+    putint(105);
+    return 0;
+}

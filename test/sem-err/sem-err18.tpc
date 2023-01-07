@@ -1,0 +1,22 @@
+int a;
+int a;
+
+int main(void)
+{
+    int a; // Works
+    switch(a){
+        a = 1;
+        case 0:
+            break;
+        case 25:
+            break;
+        case 2 + 3 + 2 * 10:
+            break;
+        default:
+            break;
+
+        default:
+            break;
+    }
+    return 0;
+}

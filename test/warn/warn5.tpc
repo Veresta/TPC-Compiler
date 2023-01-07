@@ -1,0 +1,10 @@
+int z;
+
+int alpha(int a){
+    return ;
+}
+
+int main(void){
+    z = alpha(4);
+    return 0;
+}

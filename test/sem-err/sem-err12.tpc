@@ -1,0 +1,16 @@
+
+int main(int argc){
+    c = 10;
+    switch(argc){
+        case '_':
+            i = 0;
+            break;
+        case ' ':
+            a = 10;
+            break;
+        case ' ':
+            break;
+        case '"':
+            break;
+    }
+}

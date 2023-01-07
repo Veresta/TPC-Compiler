@@ -1,0 +1,19 @@
+
+int global;
+
+void display_person(char *string){ //OOPS string are not available yet
+    if(p != NULL){
+        print(None);
+    }
+    else{
+        return;
+    
+}
+
+
+
+int main(void){
+    /*char name[10] = "Sarah";*/
+    printf(name);
+    return 0;
+}

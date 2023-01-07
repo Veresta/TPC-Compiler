@@ -1,0 +1,14 @@
+int a;
+
+
+
+int ten(void){
+    return 10;
+}
+
+
+int main(void)
+{
+    a = ten();
+    return 0;
+}

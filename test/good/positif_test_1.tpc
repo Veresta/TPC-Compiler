@@ -1,0 +1,31 @@
+/*#include <stdio.h>
+#include <stdlib.h>*/
+int a;
+
+int ppcm(int a, int b){
+    int c, d;
+    char p;
+    p = '\n';
+	c=a;
+	d=b;
+    while (a!=b){   
+        if(a>b){
+            b=d+b;
+        }
+        else{
+            a=c+a;
+        }
+    }
+    putchar('P');
+    putchar(p);
+    return a;
+}
+
+int main(void){
+    int a;
+    a = -1;
+    if(a == -1){
+        putint(-1);
+    }
+    return 0;
+}

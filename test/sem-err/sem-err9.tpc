@@ -1,0 +1,27 @@
+int daioj;
+
+
+void print(char c){
+    return;
+}
+int main(void){
+    char df;
+    int a;
+    a = 45;
+    
+    switch(a){
+        print('b');
+        print('m');
+        default:
+            print('j');
+        case 10:
+            print('a');
+            print('b');
+            print(10);
+            break;
+        default:
+            print('p', 10);
+    }
+
+}
+

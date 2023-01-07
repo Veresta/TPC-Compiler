@@ -1,0 +1,47 @@
+void foo(void){
+    int a;
+    a = getint();
+    if(a == 1){
+        a = 4;
+        putint(a);
+        return;
+    } else {
+        a = 3;
+        putint(a);
+    }
+    putint(1);
+}
+
+
+int add(int a, int b){
+    if(a > 0){
+        return 0;
+    }
+    return a + b;
+}
+
+void hello_world(int stop){
+
+    putchar('H');
+    putchar('E');
+    putchar('L');
+    putchar('L');
+    putchar('O');
+    putchar(' ');
+    putchar('W');
+    putchar('O');
+    putchar('R');
+    putchar('L');
+    putchar('D');
+    putchar('\n');
+}
+
+
+int main(void){
+    int a;
+    
+    a = add(0, 10);
+    putint(a);
+    foo();
+    return 0;
+}
